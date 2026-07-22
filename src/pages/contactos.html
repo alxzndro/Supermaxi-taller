@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Supermaxi</title>
+    <link rel="stylesheet" href="/src/css/contacto.css">
+</head>
+<body class="page-body">
+
+    <header class="main-header">
+        <img src="/src/assets/images/Supermaxi.jpg" alt="Logo de Supermaxi" class="header-logo">
+        <h1 class="header-title">Contáctanos</h1>
+        <p class="header-subtitle">Estamos aquí para ayudarte. Déjanos tu mensaje o utiliza nuestros canales de atención.</p>
+    </header>
+
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="servicios.html" class="nav-link">Servicios</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link nav-link--active">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-container">
+
+        <section class="contact-info">
+            <h2 class="section-title">Información de Atención</h2>
+            
+            <article class="info-card">
+                <h3 class="info-card__title">Línea Gratuita</h3>
+                <p class="info-card__text"><strong>Teléfono:</strong> 1800-SUPERMAXI (1800-787376)</p>
+                <p class="info-card__text"><strong>Horario de atención:</strong> Lunes a Domingo de 08:00 a 20:00</p>
+            </article>
+
+            <article class="info-card">
+                <h3 class="info-card__title">Correo Electrónico</h3>
+                <p class="info-card__text"><strong>Atención al cliente:</strong> servicioalcliente@supermaxi.com</p>
+            </article>
+
+            <article class="info-card">
+                <h3 class="info-card__title">Oficinas Principales</h3>
+                <p class="info-card__text"><strong>Dirección:</strong> Av. Amazonas y Eloy Alfaro, Quito - Ecuador</p>
+            </article>
+        </section>
+
+        <section class="contact-form-section">
+            <h2 class="section-title">Envíanos un Mensaje</h2>
+
+            <form action="#" method="POST" id="formContacto" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo" class="form-label">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" class="form-input" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono" class="form-label">Teléfono de contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="0991234567">
+                </div>
+
+                <div class="form-group">
+                    <label for="motivo" class="form-label">Motivo de consulta:</label>
+                    <select id="motivo" name="motivo" class="form-select" required>
+                        <option value="">- Selecciona una opción -</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="reclamo">Reclamo o Queja</option>
+                        <option value="facturacion">Problemas con Facturación</option>
+                        <option value="tarjeta">Tarjeta Afiliado</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" class="form-textarea" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <p class="footer-text">&copy; 2026 Supermaxi. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
